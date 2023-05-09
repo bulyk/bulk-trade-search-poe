@@ -45,8 +45,10 @@ def bulk_trade_flip():
         #авторизация
         time.sleep(3)
         browser.find_element(By.XPATH, '/html/body/div[1]/div/div/fieldset[1]/button').click()
-        browser.find_element(By.XPATH, '//*[@id="login_email"]').send_keys("alkaizer@inbox.ru")
-        browser.find_element(By.XPATH, '//*[@id="login_password"]').send_keys("89182888108")
+        
+#         you can delete the page with login and password and enter it manually (3 lines)
+        browser.find_element(By.XPATH, '//*[@id="login_email"]').send_keys("login name ")
+        browser.find_element(By.XPATH, '//*[@id="login_password"]').send_keys("password")
         browser.find_element(By.XPATH, '/html/body/div[1]/div/div/form/input[3]').click()
 
 
